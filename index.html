@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Dinámica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Dinámica</h1>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" disabled />
+      </div>
+      <div class="buttons">
+        <!-- Números y operaciones -->
+        <button onclick="calculate('7')">7</button>
+        <button onclick="calculate('8')">8</button>
+        <button onclick="calculate('9')">9</button>
+        <button onclick="calculate('/')">÷</button>
+
+        <button onclick="calculate('4')">4</button>
+        <button onclick="calculate('5')">5</button>
+        <button onclick="calculate('6')">6</button>
+        <button onclick="calculate('*')">×</button>
+
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate('-')">-</button>
+
+        <button onclick="calculate('0')">0</button>
+        <button onclick="calculate('.')">.</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('clear')">C</button>
+
+        <button onclick="calculate('calculate')">=</button>
+        <button onclick="calculate('%')">%</button>
+        <button onclick="calculate('**2')">x²</button>
+        <button onclick="calculate('**3')">x³</button>
+
+        <button onclick="calculateFunction('sqrt')">√</button>
+        <button onclick="calculateFunction('log')">log</button>
+        <button onclick="calculateFunction('sin')">sin</button>
+        <button onclick="calculateFunction('cos')">cos</button>
+        <button onclick="calculateFunction('tan')">tan</button>
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
